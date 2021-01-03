@@ -1,0 +1,17 @@
+{
+  "name": "p5js-stuff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "p5": "^1.2.0",
+    "watchify": "^3.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "watchify index.js -o build/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
