@@ -19,15 +19,14 @@ function decimalTo8BitBinaryAsArray(quotient, acc = []) {
 }
 
 const sketch = (s) => {
-  const squareSize = 10;
-  const rowLength = 200;
-  const columnLength = 100;
+  const squareSize = 2;
+  const rowLength = 1000;
+  const columnLength = 1000;
   const width = rowLength * squareSize;
   const height = columnLength * squareSize;
   const center = Math.floor(rowLength / 2);
   let startingRow = [...(Array(rowLength)).keys()]
   startingRow = startingRow.map((n, i) => i === center ? 1 : 0)
-
 
   const rule = 30;
   const reversedRule = decimalTo8BitBinaryAsArray(rule).reverse();
